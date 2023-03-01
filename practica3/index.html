@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica 3</title>
+    <style>
+        table{
+            width: 100%;   
+        }
+        td{
+            border: 5px solid blue; /* Crear un borde*/
+            margin: 50px;
+            padding-top: 20px;  /* Sangria arriba */
+            padding-bottom: 20px; /* Sangria abajo*/
+            padding-left: 10px; /* Sangia del lado izquierdo*/  /* w3schools */
+        }
+        #titulo{
+            text-align: center;
+        }
+        /* 
+        colspan: centrar, strong: negritas
+        td: columna, tr:fila o renglon
+        ul: lista ordenada con biñetas, ol: ordenada por numeros
+        hr: poner una linea horizontal como para dividir (no se cierra)
+        */
+    </style>
+</head>
+<body>
+
+<!-- Tablas-->
+    <table> 
+        <tr>
+            <td colspan="2" id="titulo">  
+                <strong> Nombre completo y Apellido </strong>
+            </td>
+        </tr>
+        <tr>
+            <td>Hugo</td>
+            <td>Sanchez</td>
+        </tr>
+        <tr>
+            <td>Luis</td>
+            <td>Sanchez</td>
+        </tr>
+        <tr>
+            <td>Paco</td>
+            <td>Sanchez</td>
+        </tr>
+    </table>
+
+    <table> 
+        <thead>
+            <tr>Mes</tr>
+            <tr>Totla</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Enero</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Febrero</td>
+                <td>$150</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Suma</td>
+                <td>$300</td>
+            </tr>
+        </tfoot>
+    </table>
+
+<!-- Listas -->
+    <ul>
+        <li>Java</li>
+        <li>Html</li>
+        <li>CSS</li>
+    </ul>
+    <hr>
+    <ol>
+        <li>Java</li>
+        <li>Html</li>
+        <li>CSS</li>
+    </ol>
+
+    <ol>
+        <li>Café</li>
+        <li>Té</li>
+            <ul>
+                <li>Té negro</li>
+                <li>Té verde</li>
+            </ul>
+        <li>Leche</li>
+    </ol>
+
+    
+    
+    <p style="height: 300px;"></p>
+
+</body>
+</html>

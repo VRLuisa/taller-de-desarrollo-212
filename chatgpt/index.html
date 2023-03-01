@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería de arte</title>
+  <style>
+    /* Estilos CSS para el menú desplegable */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="dropdown">
+      <a href="#">Páginas</a>
+      <div class="dropdown-content">
+        <a href="#artistas">Artistas</a>
+        <a href="#obras">Obras</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="artistas">
+    <h2>Artistas</h2>
+    <p>Aquí puedes encontrar información sobre los artistas que exhibimos en nuestra galería.</p>
+    <!-- Aquí iría el contenido de la sección de artistas -->
+  </section>
+
+  <section id="obras">
+    <h2>Obras</h2>
+    <p>Descubre las obras de arte que tenemos en nuestra galería.</p>
+    <!-- Aquí iría el contenido de la sección de obras -->
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+    <!-- Aquí iría el formulario de contacto o la información de contacto -->
+  </section>
+</body>
+</html>
