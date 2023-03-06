@@ -40,12 +40,71 @@
             <input type="checkbox" name="JA" id="JA"> Japón
             <input type="checkbox" name="CO" id="CO"> Colombia 
             <br><br><br>
-            <label for="mansaje">Mensaje o comentario:</label>
+            <label for="mensaje">Mensaje o comentario:</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="3"></textarea>
             <input type="submit" value="Enviar">
             <br><br><br>
         </fieldset>
 
     </form>
+
+    <p>
+    <select name="Paises" id="paises"></select>
+    <option value="1"> EU </option>
+    <option value="2"> Canada </option>
+    <option value="3"> Japon </option>
+    <option value="4">  </option>
+    </p>
+
+    <form name="formulario1">
+        <label for="usuario">Usuario:</label>
+        <input required type="text" name="usuario">
+        <label for="password">Contraseña:</label>
+        <input requeried type="password" name="password">
+    </form>
+
+    <form name="forma1">
+        <p>
+            <label for="color"> Selecciona un color:</label>
+            <input type="color" name="color">
+        </p>
+        <p>
+            <label for="nac">Fecha:</label>
+            <input type="date" name="nac">
+        </p>
+        
+        <p>
+            <label for="viaje">Horario de paretida</label>
+            <input type="datetime-local" id="viaje" name="viaje">
+        </p>
+            <label for="archivo">Ingresa una fotografía:</label>
+            <input type="file" id="archivo" name="archivo">
+
+        <p>
+            <label for="edad">Ingresa tu edad:</label>
+            <input type="number" id="edad" name="edad"
+            placeholder="10" value="18">
+        </p>
+
+        <p>
+            <label for="volumen">Volumen (entre 0 y 100):</label>
+            <input type="range" id="volumen" name="volumen"
+        min="0" max="100">
+        </p>
+
+        <p>
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana">
+        </p>
+
+        <p>
+            <label for="celular">Teléfono:</label>
+            <input type="tel" id="celular" name="celular" 
+            pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+            placeholder="Ingresa un número de celular">
+        </p>
+        <input type="submit" name="enviar" id="enviar">
+    </form>
+
 </body>
 </html>
