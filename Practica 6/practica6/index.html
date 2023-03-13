@@ -7,6 +7,7 @@
     <title>CSS</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <p>Hola mundo</p>
     <p id="para1">Párrafo 2</p>
@@ -42,6 +43,28 @@
     <a href="https://google.com">Google</a>
     <a href="https://yahoo.com">Yahoo</a>
     <p style="margin-bottom: 300px;"></p>
+
+
+
+    <form name="formulario" action="enviar.html" style="margin-bottom: 300px;">
+        <fieldset>
+            <label for="nombre">Nombre:</label> </label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="edad">Edad:</label> </label>
+            <input type="number" name="edad" id="edad">
+
+            <label for="disk_d">Nivel inglés:</label> </label>
+            <meter id="nivel" name="nivel" value="0.1">10%</meter>
+
+            <br><br>
+
+            <label for="escala">Escala:</label> </label>
+            <input type="range" name="escala" id="escala">
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
 
 </body>
 </html>
