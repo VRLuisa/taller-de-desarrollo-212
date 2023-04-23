@@ -8,19 +8,22 @@
 
     <style>
         html{
-            background: blue;
+            background-color: blue;
         }
     </style>
 
 </head>
+
 <body>
-    <h1 id="titulo">Este es un texto</h1>
-    
+    <h1 id="titulo">Esto es un texto</h1>
+    <p id="texto">Este es un parrafo en html</p>
     <ul id="colores">
+        <li>Colores:</li>
         <li>Rojo</li>
         <li>Verde</li>
         <li>Azul</li>
     </ul>
+
     <script>
         var titulo;
         titulo = document.getElementById("titulo");
@@ -28,8 +31,8 @@
  
         var texto;
         texto = document.getElementById("texto");
-        texto.style.fontSize ="50px";
-        texto.style.background = "red";
+        texto.style.fontSize = "50px";
+        texto.style.backgroundColor = "red";
 
         var colores;
         colores = document.getElementById("colores");
@@ -62,10 +65,10 @@
         console.log(c);  //
 
         var radio = 10;
-        const PI = 3.1416;
+        const pi = 3.1416;
 
         function calcularArea(){
-            let areaTemporal = PI * radio * radio;
+            let areaTemporal = pi * radio * radio;
             return areaTemporal;
         }
         console.log(calcularArea());
@@ -93,7 +96,127 @@
                 console.log("Primero:" + variablelocal);
             }
             console.log("Segundo:" + variablelocal);
- 
+
+            const PI = 3.1416;
+
+            const autos =["VW", "Chevrolet", "BMW", 14]  //se puede convinar num, leras, booleanos
+            console.log(autos);
+            console.log(autos[2]);  //empieza a contar del 0
+
+
+            const autoNuevo = {
+                tipo: "Toyota Camry",
+                modelo: 500,
+                color: "Balnco"
+            }
+            console.log(autoNuevo);
+            console.log(autoNuevo.color);
+            autoNuevo.color="Rojo"
+            console.log(autoNuevo.color);
+
+
+            var x1=4.5;
+            console.log(autoNuevo);
+
+            var y1=10;
+            console.log(typeof y1);
+
+            var z1="Hola"
+            console.log(typeof z1);
+            console.log(typeof auto);
+            console.log(typeof autoNuevo);
+
+            console.log(5*15);
+            console.log(3>10);
+
+            //peso de la letra
+            console.log("thor">"iron man"); 
+            console.log("a">"b"); 
+            console.log("de">"bc");
+
+            console.log(true && false);
+            console.log(true && true);
+            console.log(false|| true);
+
+            console.log(true ? 1:2);
+            console.log(false ? 1:2);
+
+            let eda=18;
+            if(eda>20){
+            console.log("verdadero");
+            }
+            else{
+            console.log("falso")
+            }
+
+            //operador ternario
+            let edad=18;
+            edad>20 ? "Verdadero" : "falso";
+
+
+            //null te da 0, multiplicado por cualquier número
+
+            console.log(8*null)
+            console.log("5"-1);
+            console.log("5" + 1);
+
+            let valor =0;
+            while (valor<=12){
+            console.log(valor);
+            valor++;
+            }
+
+            for(let número =0; número <=12; número ++){
+            console.log("for:" +número);
+            //otra opción 
+            console.log("for: ${número}");
+            }
+
+            //control d o f2 para cambiar de la misma palabra en varios lugares
+            for(let actual =0; actual <=12; actual ++){
+            if(actual % 7 ==0){
+            console.log("Entró porque el residuo es cero" +actual );
+            }
+            }
+
+            var cuenta = 2;
+            cuenta *= 2;  // es como decir cuenta =cuenta *2
+            console.log(cuenta);
+
+            let x4=5;
+            let z4=x4 ** 3;  // ** elevar a la potencia
+            console.log(z4);
+            //otra manera
+            let x5=5;
+            let z5=Math.pow(x5,3);  
+            console.log(z5);
+
+            let x6 = (100+50) *3;
+            console.log(x6);
+
+            let car = "";
+            function miFuncion(a,b){
+            return a*b;
+            }
+            console.log(miFuncion(3,9));
+
+            const persona = {
+            nombre:"Juan",
+            apellido:"Perez",
+            id:123,
+            nombreCompleto: function (){
+            return this.nombre + " " + this.apellido;
+            }
+            }
+            console.log(persona.nombreCompleto());
+            console.log(persona["apellido"]);
+
+            var perso = {
+            nombre: "José",
+            edad: 31,
+            ciudad: "leon"
+            }
+            console.log(perso);
     </script>
 </body>
 </html>
