@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        margin: 0;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+ 
+    ul {
+        list-style-type: none; /*tipo de lista ninguna(no viñetas)*/
+        margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto; /*si se llena mi pantalla*/
+        }
+ 
+    li a { /*la liga "a" tiene estas propiedades*/
+        display: block; /*desplegado como bloque*/
+        color: #000000;
+        padding: 8px 16px;
+        text-decoration: none;
+        }
+ 
+    li a.active {
+        background-color: rgb(155, 155, 253);
+        color: white;
+        }
+ 
+    li a:hover:not(.active) {
+        background-color: #d6bef7;
+        color: white;
+        }
+    
+    h2{
+        color: #720808;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    #home{
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+        background-color: #beecce;
+    }
+
+    #news{
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    #contact{
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    #about{
+        margin-left: 25%;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <ul> <!--# anclas, así podrias modificar cada # usando el estilo que tu quieras -->
+        <li><a class="active" href="#home">Inicio</a></li>
+        <li><a href="#news">Noticias</a></li>
+        <li id="contacto"><a href="#contact">Contacto</a></li>
+        <li><a href="#about">Acerca de</a></li>
+    </ul>
+
+    <div id="#home">
+        <h2>INICIO</h2>
+        <br>
+        <h3>Subtitulo</h3>
+        <p>Información en texto del contenido</p>
+        <p>Información en texto del contenido</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        </div>
+
+    <div id="#news">
+        <h2>NOTICIAS</h2>
+        <br>
+        <h3>Subtitulo</h3>
+        <p>Información en texto del contenido</p>
+        <p>Información en texto del contenido</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+    </div>
+
+    <div id="#contact">
+        <h2>CONTACTO</h2>
+        <br>
+        <h3>Subtitulo</h3>
+        <p>Información en texto del contenido</p>
+        <p>Información en texto del contenido</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+    </div>
+
+    <div id="#about">
+        <h2>ACERCA DE</h2>
+        <br>
+        <h3>Subtitulo</h3>
+        <p>Información en texto del contenido</p>
+        <p>Información en texto del contenido</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+        <p>Más texto</p>
+    </div>
+</body>
+</html>
