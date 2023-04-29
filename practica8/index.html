@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Obras de arte</title>
 
     <style>
         body {
@@ -16,7 +16,7 @@
         list-style-type: none; /*tipo de lista ninguna(no viñetas)*/
         margin: 0;
         padding: 0;
-        width: 25%;
+        width: 20%;
         background-color: #f1f1f1;
         position: fixed;
         height: 100%;
@@ -26,7 +26,7 @@
     li a { /*la liga "a" tiene estas propiedades*/
         display: block; /*desplegado como bloque*/
         color: #000000;
-        padding: 8px 16px;
+        padding: 12px 15px;
         text-decoration: none;
         }
  
@@ -41,101 +41,230 @@
         }
     
     h2{
-        color: #720808;
+        color: #000000;
         text-align: center;
         padding-top: 30px;
     }
 
-    #home{
-        margin-left: 25%;
-        padding: 1px 16px;
-        height: 1000px;
-        background-color: #beecce;
-    }
-
-    #news{
-        margin-left: 25%;
-        padding: 1px 16px;
-        height: 1000px;
-    }
-
-    #contact{
-        margin-left: 25%;
-        padding: 1px 16px;
-        height: 1000px;
-    }
-
-    #about{
-        margin-left: 25%;
-        padding: 1px 16px;
-        height: 1000px;
+    h3{
+        color: #000000;
+        font-weight:10;
+        font-size:medium;
     }
     
-    </style>
+    #home{
+        background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-grunge-vintage_1048-10911.jpg?w=2000);
+        margin-left: 20%;
+        text-align: justify;
+        padding: 1px 11px;
+        height: 1000px;
+    }
+
+    #history{
+        background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-grunge-vintage_1048-10911.jpg?w=2000);
+        margin-left: 20%;
+        text-align: justify;
+        padding: 1px 8px;
+        height: 1000px;
+    }
+
+    #caracteristica{
+        background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-grunge-vintage_1048-10911.jpg?w=2000);
+        margin-left: 20%;
+        text-align: justify;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    #people{
+        background-image: url(https://img.freepik.com/foto-gratis/fondo-papel-grunge-vintage_1048-10911.jpg?w=2000);
+        margin-left: 20%;
+        text-align: justify;
+        padding: 1px 16px;
+        height: 1000px;
+    }
+
+    .slideshow-container {
+        max-width: 550px;
+        position: relative;
+        margin: auto;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Next and previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+</style>
 </head>
 
 <body>
-    <ul> <!--# anclas, así podrias modificar cada # usando el estilo que tu quieras -->
+    <ul> <!--# anclas, así podrias modificar cada # usando el estilo que tu quieras-->
         <li><a class="active" href="#home">Inicio</a></li>
-        <li><a href="#news">Noticias</a></li>
-        <li id="contacto"><a href="#contact">Contacto</a></li>
-        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#history">Historia</a></li>
+        <li id="characteristics"><a href="#caracteristica">Características</a></li>
+        <li><a href="#people">Pintores</a></li>
     </ul>
 
-    <div id="#home">
-        <h2>INICIO</h2>
+    <div id="home">
+        <h2>Inicio</h2>
         <br>
-        <h3>Subtitulo</h3>
-        <p>Información en texto del contenido</p>
-        <p>Información en texto del contenido</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
+        <h3><i>Aquí te explicaremos qué es la pintura, su origen y sus características. Además de sus principales representantes y obras más reconocidas.</i></h3>
+        <br>
+        <p>¿Qué es la pintura?</p>
+        <p>La pintura es el arte de la representación gráfica utilizando pigmentos mezclados con otras sustancias aglutinantes, orgánicas o sintéticas. En este arte se emplean técnicas de pintura, conocimientos de teoría del color y de composición pictórica, y el dibujo.</p>
+        <p>Consiste en un arte complejo que requiere de la integración de diversas técnicas de pintura, de dibujo, de composición visual y el manejo de la teoría del color.</p>
+        <br>
         </div>
 
-    <div id="#news">
-        <h2>NOTICIAS</h2>
+    <div id="history">
+        <h2>Historia</h2>
         <br>
-        <h3>Subtitulo</h3>
-        <p>Información en texto del contenido</p>
-        <p>Información en texto del contenido</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
+        <p>La pintura es una de las siete bellas artes y una de las formas de expresión más antigua que data de la prehistoria, unos cincuenta mil años atrás.</p>
+        <p>Para los primeros seres humanos la pintura resultó una expresión del pensamiento simbólico que surgió mucho antes de la invención de la escritura.</p>
+        <p>Hace cinco mil años la pintura egipcia evidenció una evolución en sus técnicas y diseños, aunque mantenían imágenes conceptuales más que realistas. Solían pintar en los muros de las tumbas de los faraones figuras de seres mitológicos y escenas de la vida cotidiana, como la caza y la agricultura.</p>
+        <p>La pintura romana fue de gran influencia para los griegos, tanto por las paredes decoradas con la pintura mural como por la pintura sobre vajillas y cerámicas. Los griegos se destacaron por los avances en las técnicas de pintura sobre cerámicas.</p>
+        <p>Antes de la invasión española, la pintura de los pueblos originarios americanos representaba situaciones religiosas, sus diferentes deidades y cuestiones de astrología, como puede observase en las culturas azteca, teotihuacana o maya.</p>
+        <p>Con la conexión del viejo y el nuevo mundo, los nuevos movimientos artísticos, la mayoría surgidos en Europa, se difundieron por todo el mundo. Por ejemplo, el modernismo a partir del 1900, la pintura gótica a partir del 1400, el cubismo a partir de 1910, el expresionismo a partir de 1914 y el dadaísmo a partir de 1916, entre otros.</p>
     </div>
 
-    <div id="#contact">
-        <h2>CONTACTO</h2>
+    <div id="caracteristica">
+        <h2>Características</h2>
         <br>
-        <h3>Subtitulo</h3>
-        <p>Información en texto del contenido</p>
-        <p>Información en texto del contenido</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
+        <p>Entre las principales características de la pintura se destaca:</p>
+        <br>
+        <p>Se manifiesta en la diversidad de corrientes y movimientos artísticos, como en el expresionismo, el cubismo, el impresionismo, el modernismo y el fauvismo.</p>
+        <p>Hace uso de diferentes técnicas para la creación de nuevas obras. Dentro de estas técnicas se destaca el fresco, la acuarela, el temple, el óleo, el puntillismo, etc.</p>
+        <p>Hace uso de dos o tres dimensiones: alto, ancho y profundidad, a través de técnicas de perspectiva visual que se emplean para crear la ilusión de profundidad.</p>
+        <p>Utiliza diversos soportes como el lienzo, la tabla, el papel, los murales, entre otros.</p>
+        <p>La pintura juega con el color para dar más fuerza expresiva, lo cual se aprecia con el reflejo de la luz en la pigmentación.</p>
     </div>
 
-    <div id="#about">
-        <h2>ACERCA DE</h2>
+    <div id="people">
+        <h2>Pintores</h2>
         <br>
-        <h3>Subtitulo</h3>
-        <p>Información en texto del contenido</p>
-        <p>Información en texto del contenido</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
-        <p>Más texto</p>
+        <p>Entre los principales representantes de la pintura y sus obras se destacan:</p>
+        <br>
+        <p>Sandro Botticelli y su obra El nacimiento de Venus de 1486.</p> 
+        <p>Hieronymus Bosch y su obra El jardín de las delicias de 1515.</p>
+        <p>Leonardo Da Vinci y su obra Mona Lisa de 1519.</p>
+        <p>Johannes Vermeer y su obra La joven de la perla de 1665.</p>
+        <p>Vincent van Gogh y su obra La noche estrellada de 1889.</p>
+        <p>Pablo Picasso y su obra Las señoritas de Avignon de 1907.</p>
+        <p>Gustav Klimt y su obra El beso de 1908.</p>
+        <p>Frida Kahlo y su obra Las dos Fridas de 1939.</p>
+        <br>
+        <br>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/img1.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img2.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img3.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img4.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img5.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img6.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img7.jpg">
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/img8.jpg">
+            </div>
+          </div>     
     </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 10000); // Cambia cada 10 segundos
+        }
+        </script>
+        
 </body>
 </html>
